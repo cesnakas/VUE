@@ -1,22 +1,5 @@
 {
-    "name": "vue",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/cesnakas/VUE.git"
-    },
-    "author": "",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/cesnakas/VUE/issues"
-    },
-    "homepage": "https://github.com/cesnakas/VUE#readme",
-    "devDependencies": {
-        "vue": "^3.1.5"
-    }
+  "devDependencies": {
+    "@vue/cli": "^4.5.13"
+  }
 }

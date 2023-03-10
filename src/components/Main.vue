@@ -5,11 +5,9 @@ import { RouterView } from 'vue-router'
 <template>
   <main>
     <div class="container">
-      <RouterView/>
+      <RouterView />
     </div>
   </main>
 </template>
 
-<style lang="scss">
-
-</style>
+<style lang="scss"></style>

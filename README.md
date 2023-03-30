@@ -1,4 +1,11 @@
-# .
+# Vue.js
+
+## Creating a Vue Application
+
+```sh
+npm init vue@latest
+```
+
 
 This template should help get you started developing with Vue 3 in Vite.
 

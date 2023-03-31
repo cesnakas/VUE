@@ -12,9 +12,6 @@ const router = createRouter({
     {
       path: '/about',
       name: 'About',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
       component: () => import('../views/AboutView.vue')
     },
     {
@@ -27,9 +24,13 @@ const router = createRouter({
       name: 'Contact',
       component: () => import('@/views/ContactView.vue')
     }
-  ]
+  ],
+  // Active links
+  linkActiveClass: 'active',
+  linkExactActiveClass: 'exact-active'
 })
 
+// Title
 router.beforeEach((to, from, next) => {
   document.title = to.name
   next()

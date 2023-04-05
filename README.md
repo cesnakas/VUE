@@ -28,10 +28,13 @@ npm run build
 npm run lint
 ```
 
-## Hosting
+## Server Configurations
 
-### .htaccess
+### Apache
 ```apacheconf
+<IfModule mod_negotiation.c>
+  Options -MultiViews
+</IfModule>
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
@@ -41,4 +44,11 @@ npm run lint
   RewriteCond %{REQUEST_FILENAME} !-l
   RewriteRule . /index.html [L]
 </IfModule>
+```
+
+### nginx
+```apacheconf
+location / {
+  try_files $uri $uri/ /index.html;
+}
 ```

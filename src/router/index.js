@@ -6,7 +6,7 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      name: 'Home',
+      name: 'Vue',
       component: HomeView
     },
     {
@@ -23,7 +23,8 @@ const router = createRouter({
       path: '/contact',
       name: 'Contact',
       component: () => import('@/views/ContactView.vue')
-    }
+    },
+    { path: '/:pathMatch(.*)', name: 'Not Found', component: () => import('../views/NotFound.vue') }
   ],
   // Active links
   linkActiveClass: 'active',

@@ -6,7 +6,6 @@ import * as Popper from '@popperjs/core'
 import App from './App.vue'
 import router from './router'
 
-// import '@/assets/main.css'
 import '@/assets/scss/app.scss'
 
 const app = createApp(App)
